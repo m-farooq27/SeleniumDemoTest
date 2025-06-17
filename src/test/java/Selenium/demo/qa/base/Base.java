@@ -2,7 +2,6 @@ package Selenium.demo.qa.base;
 
 import java.time.Duration;
 
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -11,17 +10,22 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.*;
 
 import Selenium.demoqa.utilities.PropertiesHandler;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 
 public class Base {
 	
 	public WebDriver driver;
+	private static final Logger log = LogManager.getLogger(Base.class);
 	
 	@BeforeMethod
 	public void setUp() {
 		String browserType = PropertiesHandler.get("browserType").toLowerCase();
 		String applicationUnderTest = PropertiesHandler.get("applicationUnderTest");
 		int timeout = PropertiesHandler.getInt("timeout", 10);
+		
+		log.info("Launching browser: {}", browserType);
 		
 		switch (browserType) {
 		case "chrome":
@@ -44,7 +48,11 @@ public class Base {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeout));
 		driver.get(applicationUnderTest);
+		
+		log.info("Navigated to: {}", applicationUnderTest);
+		
 	}
+	
 	
 	@AfterMethod
 	public void tearDown() {

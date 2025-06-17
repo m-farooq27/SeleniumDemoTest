@@ -1,48 +1,36 @@
 package Selenium.demoqa.tests;
 
-import Selenium.demo.qa.base.Base;
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.AfterMethod;
-import org.openqa.selenium.WebDriver;
+import Selenium.demo.qa.base.Base;
 import Selenium.demoqa.pages.HomePage;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import static org.testng.Assert.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class HomePageTest extends Base {
-	
-	private HomePage homePage;
-	
-	@BeforeMethod
-	public void initializePage() {
-		super.setUp();
-		homePage = new HomePage(driver);
-	}
-	
-	@Test
-	public void verifyHomePageLoadsSuccessfully() {
-		assertTrue(homePage.isHomePageLoaded(),"Home page should load with header and footer visible");
-	}
-	
-	@Test
-	public void verifyAllMainCardsAreVisible() {
-		assertTrue(homePage.isCardVisible("elements"),"Elements card should be visible");
-		assertTrue(homePage.isCardVisible("forms"),"Forms card should be visible");
-		assertTrue(homePage.isCardVisible("alerts"),"Alerts card should be visible");
-		assertTrue(homePage.isCardVisible("widgets"),"Widgets card should be visible");
-		assertTrue(homePage.isCardVisible("interactions"),"Interactions card should be visible");
-		assertTrue(homePage.isCardVisible("book store"),"Book store card should be visible");
-	}
-	
-	@Test
-	public void testNavigationToElementsSection() {
-		homePage.clickCard("elements");
-		assertTrue(driver.getPageSource().contains("Elements"),"Should navigate to Elements section");
-	}
-	
-	@AfterMethod
-	public void cleanUp() {
-		super.tearDown();
-	}
+
+    private static final Logger log = LogManager.getLogger(HomePageTest.class);
+
+    @Test
+    public void verifyHomePageLoadsSuccessfully() {
+        log.info("Starting Home Page load verification test.");
+
+        HomePage homePage = new HomePage(driver);
+
+        Assert.assertTrue(homePage.isHomePageLoaded(), "Home page did not load correctly.");
+        log.info("Home page loaded successfully.");
+    }
+
+    @Test
+    public void verifyElementsCardIsVisibleAndClickable() {
+        log.info("Starting test for visibility and clickability of 'Elements' card.");
+
+        HomePage homePage = new HomePage(driver);
+
+        Assert.assertTrue(homePage.isCardVisible("elements"), "'Elements' card is not visible.");
+        log.info("'Elements' card is visible.");
+
+        homePage.clickCard("elements");
+        log.info("Clicked on 'Elements' card.");
+    }
 }

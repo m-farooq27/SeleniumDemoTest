@@ -1,89 +1,122 @@
 package Selenium.demoqa.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.*;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class HomePage {
-	WebDriver driver;
-	
-	//Constructor
-	public HomePage(WebDriver driver) {
-		this.driver = driver;
-	}
 
-	//Locators
-	By logo = By.cssSelector("img[alt='ToolsQA']");
-	By footer = By.cssSelector(".footer-text");
-	
-	By elementsCard = By.xpath("//h5[text()='Elements']");
-	By formsCard = By.xpath("//h5[text()='Forms']");
-	By alertsCard = By.xpath("//h5[text()='Alerts, Frame & Windows']");
-	By widgetsCard = By.xpath("//h5[text()='Widgets']");
-	By interactionsCard = By.xpath("//h5[text()='Interactions']");
-	By bookStoreCard = By.xpath("//h5[text()='Book Store Application']");
-	
-	//Page Actions
-	
-	public boolean isLogoVisible() {
-		return driver.findElement(logo).isDisplayed();
-	}
-	
-	public boolean isFooterVisible() {
-		return driver.findElement(footer).isDisplayed();
-	}
-	
-	public boolean isCardVisible(String cardName) {
-		switch (cardName.toLowerCase()) {
-		case "elements":
-			return driver.findElement(elementsCard).isDisplayed();
-		case "forms":
-			return driver.findElement(formsCard).isDisplayed();
-		case "alerts":
-			return driver.findElement(alertsCard).isDisplayed();
-		case "widgets":
-			return driver.findElement(widgetsCard).isDisplayed();
-		case "interactions":
-			return driver.findElement(interactionsCard).isDisplayed();
-		case "book store":
-			return driver.findElement(bookStoreCard).isDisplayed();
-		default:
-			throw new IllegalArgumentException("Unknown card name: " + cardName);
-		}
-	}
-	
-	public void clickCard(String cardName) {
-		switch (cardName.toLowerCase()) {
-			case "elements":
-				driver.findElement(elementsCard).click();
-				break;
-			case "forms":
-				driver.findElement(formsCard).click();
-				break;
-			case "alerts":
-				driver.findElement(alertsCard).click();
-				break;
-			case "widgets":
-				driver.findElement(widgetsCard).click();
-				break;
-			case "interactions":
-				driver.findElement(interactionsCard).click();
-				break;
-			case "book store":
-				driver.findElement(bookStoreCard).click();
-				break;
-			default:
-				throw new IllegalArgumentException("Unknown card name: " + cardName);
-		
-		}
-	}
-	
-	public String getHomePageTitle() {
-		return driver.getTitle();
-	}
-	
-	public boolean isHomePageLoaded() {
-		return isLogoVisible() && isFooterVisible();
-	}
+    private static final Logger log = LogManager.getLogger(HomePage.class);
+
+    private WebDriver driver;
+
+    // Constructor: initializes elements using PageFactory
+    public HomePage(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+        log.info("HomePage initialized with PageFactory");
+    }
+
+    // Locators using @FindBy
+    @FindBy(css = "img[alt='ToolsQA']")
+    private WebElement logo;
+
+    @FindBy(css = ".footer-text")
+    private WebElement footer;
+
+    @FindBy(xpath = "//h5[text()='Elements']")
+    private WebElement elementsCard;
+
+    @FindBy(xpath = "//h5[text()='Forms']")
+    private WebElement formsCard;
+
+    @FindBy(xpath = "//h5[text()='Alerts, Frame & Windows']")
+    private WebElement alertsCard;
+
+    @FindBy(xpath = "//h5[text()='Widgets']")
+    private WebElement widgetsCard;
+
+    @FindBy(xpath = "//h5[text()='Interactions']")
+    private WebElement interactionsCard;
+
+    @FindBy(xpath = "//h5[text()='Book Store Application']")
+    private WebElement bookStoreCard;
+
+    // Page Actions
+
+    public boolean isLogoVisible() {
+        boolean visible = logo.isDisplayed();
+        log.info("Logo visible: {}", visible);
+        return visible;
+    }
+
+    public boolean isFooterVisible() {
+        boolean visible = footer.isDisplayed();
+        log.info("Footer visible: {}", visible);
+        return visible;
+    }
+
+    public boolean isCardVisible(String cardName) {
+        log.info("Checking card visibility: {}", cardName);
+        switch (cardName.toLowerCase()) {
+            case "elements":
+                return elementsCard.isDisplayed();
+            case "forms":
+                return formsCard.isDisplayed();
+            case "alerts":
+                return alertsCard.isDisplayed();
+            case "widgets":
+                return widgetsCard.isDisplayed();
+            case "interactions":
+                return interactionsCard.isDisplayed();
+            case "book store":
+                return bookStoreCard.isDisplayed();
+            default:
+                log.error("Invalid card name: {}", cardName);
+                throw new IllegalArgumentException("Unknown card name: " + cardName);
+        }
+    }
+
+    public void clickCard(String cardName) {
+        log.info("Clicking card: {}", cardName);
+        switch (cardName.toLowerCase()) {
+            case "elements":
+                elementsCard.click();
+                break;
+            case "forms":
+                formsCard.click();
+                break;
+            case "alerts":
+                alertsCard.click();
+                break;
+            case "widgets":
+                widgetsCard.click();
+                break;
+            case "interactions":
+                interactionsCard.click();
+                break;
+            case "book store":
+                bookStoreCard.click();
+                break;
+            default:
+                log.error("Invalid card name clicked: {}", cardName);
+                throw new IllegalArgumentException("Unknown card name: " + cardName);
+        }
+    }
+
+    public String getHomePageTitle() {
+        String title = driver.getTitle();
+        log.info("Page title: {}", title);
+        return title;
+    }
+
+    public boolean isHomePageLoaded() {
+        boolean loaded = isLogoVisible() && isFooterVisible();
+        log.info("Home page loaded status: {}", loaded);
+        return loaded;
+    }
 }
+
