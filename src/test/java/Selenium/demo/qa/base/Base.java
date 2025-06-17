@@ -1,4 +1,4 @@
-package Selenium.demoqa.pages;
+package Selenium.demo.qa.base;
 
 import java.time.Duration;
 
