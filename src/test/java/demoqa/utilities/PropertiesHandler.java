@@ -1,4 +1,4 @@
-package Selenium.demoqa.utilities;
+package demoqa.utilities;
 
 import java.io.InputStream; //read config.properties as stream from filepath
 import java.util.Properties; //built-in java class to handle .properties

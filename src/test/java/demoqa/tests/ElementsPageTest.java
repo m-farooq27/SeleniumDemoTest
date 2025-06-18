@@ -1,10 +1,11 @@
-package Selenium.demoqa.tests;
+package demoqa.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import Selenium.demo.qa.base.Base;
-import Selenium.demoqa.pages.ElementsPage;
-import Selenium.demoqa.pages.HomePage;
+
+import demoqa.base.Base;
+import demoqa.pages.ElementsPage;
+import demoqa.pages.HomePage;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

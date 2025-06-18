@@ -1,4 +1,4 @@
-package Selenium.demoqa.poc;
+package demoqa.poc;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

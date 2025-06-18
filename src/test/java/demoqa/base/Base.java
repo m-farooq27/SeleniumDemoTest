@@ -1,6 +1,7 @@
-package Selenium.demo.qa.base;
+package demoqa.base;
 
 import java.time.Duration;
+
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,7 +10,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.*;
 
-import Selenium.demoqa.utilities.PropertiesHandler;
+import demoqa.utilities.PropertiesHandler;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
