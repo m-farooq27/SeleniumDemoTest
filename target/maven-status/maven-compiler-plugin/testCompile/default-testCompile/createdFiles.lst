@@ -1,0 +1,7 @@
+Selenium\demoqa\tests\HomePageTest.class
+Selenium\demoqa\pages\HomePage.class
+Selenium\demoqa\utilities\PropertiesHandler.class
+Selenium\demo\qa\base\Base.class
+Selenium\demoqa\tests\ElementsPageTest.class
+Selenium\demoqa\pages\ElementsPage.class
+Selenium\demoqa\poc\ProofOfConcept.class

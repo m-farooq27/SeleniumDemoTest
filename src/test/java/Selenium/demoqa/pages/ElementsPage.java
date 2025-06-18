@@ -20,32 +20,23 @@ public class ElementsPage {
     }
 
     // Web Elements (sidebar options in the Elements section)
-    @FindBy(xpath = "//span[text()='Text Box']")
-    private WebElement textBoxOption;
+    @FindBy(xpath = "//*[@id=\"item-0\"]") private WebElement textBoxOption;
 
-    @FindBy(xpath = "//span[text()='Check Box']")
-    private WebElement checkBoxOption;
+    @FindBy(xpath = "//*[@id=\"item-1\"]") private WebElement checkBoxOption;
 
-    @FindBy(xpath = "//span[text()='Radio Button']")
-    private WebElement radioButtonOption;
+    @FindBy(xpath = "//*[@id=\"item-2\"]") private WebElement radioButtonOption;
 
-    @FindBy(xpath = "//span[text()='Web Tables']")
-    private WebElement webTablesOption;
+    @FindBy(xpath = "//*[@id=\"item-3\"]") private WebElement webTablesOption;
 
-    @FindBy(xpath = "//span[text()='Buttons']")
-    private WebElement buttonsOption;
+    @FindBy(xpath = "//*[@id=\"item-4\"]") private WebElement buttonsOption;
 
-    @FindBy(xpath = "//span[text()='Links']")
-    private WebElement linksOption;
+    @FindBy(xpath = "//*[@id=\"item-5\"]") private WebElement linksOption;
 
-    @FindBy(xpath = "//span[text()='Broken Links - Images']")
-    private WebElement brokenLinksOption;
+    @FindBy(xpath = "//*[@id=\"item-6\"]") private WebElement brokenLinksOption;
 
-    @FindBy(xpath = "//span[text()='Upload and Download']")
-    private WebElement uploadDownloadOption;
+    @FindBy(xpath = "//*[@id=\"item-7\"]") private WebElement uploadDownloadOption;
 
-    @FindBy(xpath = "//span[text()='Dynamic Properties']")
-    private WebElement dynamicPropertiesOption;
+    @FindBy(xpath = "//*[@id=\"item-8\"]") private WebElement dynamicPropertiesOption;
 
     // Actions
 

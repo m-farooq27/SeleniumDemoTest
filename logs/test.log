@@ -1,0 +1,117 @@
+2025-06-18 09:20:01 [main] INFO  Base - Launching browser: edge
+2025-06-18 09:20:10 [main] INFO  Base - Navigated to: https://demoqa.com
+2025-06-18 09:20:10 [main] INFO  ElementsPageTest - Test: Click on 'Web Tables' option from Elements page
+2025-06-18 09:20:11 [main] INFO  HomePage - HomePage initialized with PageFactory
+2025-06-18 09:20:11 [main] INFO  HomePage - Clicking card: elements
+2025-06-18 09:20:15 [main] INFO  Base - Launching browser: edge
+2025-06-18 09:20:25 [main] INFO  Base - Navigated to: https://demoqa.com
+2025-06-18 09:20:25 [main] INFO  ElementsPageTest - Test: Verify Elements page loads and Text Box option is visible
+2025-06-18 09:20:25 [main] INFO  HomePage - HomePage initialized with PageFactory
+2025-06-18 09:20:26 [main] INFO  Base - Launching browser: edge
+2025-06-18 09:20:34 [main] INFO  Base - Navigated to: https://demoqa.com
+2025-06-18 09:20:34 [main] INFO  ElementsPageTest - Test: Click on 'Web Tables' option from Elements page
+2025-06-18 09:20:34 [main] INFO  HomePage - HomePage initialized with PageFactory
+2025-06-18 09:20:34 [main] INFO  HomePage - Clicking card: elements
+2025-06-18 09:20:38 [main] INFO  Base - Launching browser: edge
+2025-06-18 09:20:40 [main] INFO  Base - Launching browser: edge
+2025-06-18 09:20:44 [main] INFO  Base - Navigated to: https://demoqa.com
+2025-06-18 09:20:44 [main] INFO  ElementsPageTest - Test: Verify Elements page loads and Text Box option is visible
+2025-06-18 09:20:44 [main] INFO  HomePage - HomePage initialized with PageFactory
+2025-06-18 09:20:54 [main] INFO  Base - Navigated to: https://demoqa.com
+2025-06-18 09:20:54 [main] INFO  HomePageTest - Starting test for visibility and clickability of 'Elements' card.
+2025-06-18 09:20:54 [main] INFO  HomePage - HomePage initialized with PageFactory
+2025-06-18 09:20:54 [main] INFO  HomePage - Checking card visibility: elements
+2025-06-18 09:20:54 [main] INFO  HomePageTest - 'Elements' card is visible.
+2025-06-18 09:20:54 [main] INFO  HomePage - Clicking card: elements
+2025-06-18 09:20:59 [main] INFO  Base - Launching browser: edge
+2025-06-18 09:20:59 [main] INFO  Base - Launching browser: edge
+2025-06-18 09:21:05 [main] INFO  Base - Navigated to: https://demoqa.com
+2025-06-18 09:21:05 [main] INFO  HomePageTest - Starting test for visibility and clickability of 'Elements' card.
+2025-06-18 09:21:05 [main] INFO  HomePage - HomePage initialized with PageFactory
+2025-06-18 09:21:05 [main] INFO  HomePage - Checking card visibility: elements
+2025-06-18 09:21:05 [main] INFO  HomePageTest - 'Elements' card is visible.
+2025-06-18 09:21:05 [main] INFO  HomePage - Clicking card: elements
+2025-06-18 09:21:11 [main] INFO  Base - Navigated to: https://demoqa.com
+2025-06-18 09:21:11 [main] INFO  HomePageTest - Starting Home Page load verification test.
+2025-06-18 09:21:11 [main] INFO  HomePage - HomePage initialized with PageFactory
+2025-06-18 09:21:12 [main] INFO  Base - Launching browser: edge
+2025-06-18 09:21:17 [main] INFO  Base - Navigated to: https://demoqa.com
+2025-06-18 09:21:17 [main] INFO  HomePageTest - Starting Home Page load verification test.
+2025-06-18 09:21:17 [main] INFO  HomePage - HomePage initialized with PageFactory
+2025-06-18 09:29:59 [main] INFO  Base - Launching browser: edge
+2025-06-18 09:30:05 [main] INFO  Base - Navigated to: https://demoqa.com
+2025-06-18 09:30:05 [main] INFO  ElementsPageTest - Test: Click on 'Web Tables' option from Elements page
+2025-06-18 09:30:05 [main] INFO  HomePage - HomePage initialized with PageFactory
+2025-06-18 09:30:05 [main] INFO  HomePage - Clicking card: elements
+2025-06-18 09:30:11 [main] INFO  Base - Launching browser: edge
+2025-06-18 09:30:17 [main] INFO  Base - Navigated to: https://demoqa.com
+2025-06-18 09:30:17 [main] INFO  ElementsPageTest - Test: Verify Elements page loads and Text Box option is visible
+2025-06-18 09:30:17 [main] INFO  HomePage - HomePage initialized with PageFactory
+2025-06-18 09:30:31 [main] INFO  Base - Launching browser: edge
+2025-06-18 09:30:36 [main] INFO  Base - Navigated to: https://demoqa.com
+2025-06-18 09:30:36 [main] INFO  HomePageTest - Starting test for visibility and clickability of 'Elements' card.
+2025-06-18 09:30:36 [main] INFO  HomePage - HomePage initialized with PageFactory
+2025-06-18 09:30:36 [main] INFO  HomePage - Checking card visibility: elements
+2025-06-18 09:30:37 [main] INFO  HomePageTest - 'Elements' card is visible.
+2025-06-18 09:30:37 [main] INFO  HomePage - Clicking card: elements
+2025-06-18 09:30:42 [main] INFO  Base - Launching browser: edge
+2025-06-18 09:30:48 [main] INFO  Base - Navigated to: https://demoqa.com
+2025-06-18 09:30:48 [main] INFO  HomePageTest - Starting Home Page load verification test.
+2025-06-18 09:30:48 [main] INFO  HomePage - HomePage initialized with PageFactory
+2025-06-18 10:14:27 [main] INFO  Base - Launching browser: edge
+2025-06-18 10:14:37 [main] INFO  Base - Navigated to: https://demoqa.com
+2025-06-18 10:14:37 [main] INFO  ElementsPageTest - Test: Click on 'Web Tables' option from Elements page
+2025-06-18 10:14:37 [main] INFO  HomePage - HomePage initialized with PageFactory
+2025-06-18 10:14:37 [main] INFO  HomePage - Clicking card: elements
+2025-06-18 10:14:43 [main] INFO  Base - Launching browser: edge
+2025-06-18 10:14:52 [main] INFO  Base - Navigated to: https://demoqa.com
+2025-06-18 10:14:52 [main] INFO  ElementsPageTest - Test: Verify Elements page loads and Text Box option is visible
+2025-06-18 10:14:52 [main] INFO  HomePage - HomePage initialized with PageFactory
+2025-06-18 10:15:05 [main] INFO  Base - Launching browser: edge
+2025-06-18 10:15:16 [main] INFO  Base - Navigated to: https://demoqa.com
+2025-06-18 10:15:16 [main] INFO  HomePageTest - Starting test for visibility and clickability of 'Elements' card.
+2025-06-18 10:15:16 [main] INFO  HomePage - HomePage initialized with PageFactory
+2025-06-18 10:15:16 [main] INFO  HomePage - Checking card visibility: elements
+2025-06-18 10:15:16 [main] INFO  HomePageTest - 'Elements' card is visible.
+2025-06-18 10:15:16 [main] INFO  HomePage - Clicking card: elements
+2025-06-18 10:15:22 [main] INFO  Base - Launching browser: edge
+2025-06-18 10:15:27 [main] INFO  Base - Navigated to: https://demoqa.com
+2025-06-18 10:15:27 [main] INFO  HomePageTest - Starting Home Page load verification test.
+2025-06-18 10:15:27 [main] INFO  HomePage - HomePage initialized with PageFactory
+2025-06-18 11:14:52 [main] INFO  Base - Launching browser: edge
+2025-06-18 11:15:01 [main] INFO  Base - Navigated to: https://demoqa.com/books
+2025-06-18 11:15:01 [main] INFO  ElementsPageTest - Test: Click on 'Web Tables' option from Elements page
+2025-06-18 11:15:01 [main] INFO  HomePage - HomePage initialized with PageFactory
+2025-06-18 11:15:01 [main] INFO  HomePage - Clicking card: elements
+2025-06-18 11:15:01 [main] INFO  ElementsPageTest - Navigated to Elements section
+2025-06-18 11:15:01 [main] INFO  ElementsPage - ElementsPage initialized using PageFactory
+2025-06-18 11:15:01 [main] INFO  ElementsPage - Checking visibility of element option: web tables
+2025-06-18 11:15:04 [main] INFO  Base - Launching browser: edge
+2025-06-18 11:15:09 [main] INFO  Base - Navigated to: https://demoqa.com/books
+2025-06-18 11:15:09 [main] INFO  ElementsPageTest - Test: Verify Elements page loads and Text Box option is visible
+2025-06-18 11:15:09 [main] INFO  HomePage - HomePage initialized with PageFactory
+2025-06-18 11:15:09 [main] INFO  HomePage - Logo visible: true
+2025-06-18 11:15:09 [main] INFO  HomePage - Footer visible: true
+2025-06-18 11:15:09 [main] INFO  HomePage - Home page loaded status: true
+2025-06-18 11:15:09 [main] INFO  ElementsPageTest - Home page loaded successfully
+2025-06-18 11:15:09 [main] INFO  HomePage - Clicking card: elements
+2025-06-18 11:15:09 [main] INFO  ElementsPageTest - Clicked on 'Elements' card
+2025-06-18 11:15:09 [main] INFO  ElementsPage - ElementsPage initialized using PageFactory
+2025-06-18 11:15:09 [main] INFO  ElementsPage - Checking visibility of element option: text box
+2025-06-18 11:15:09 [main] INFO  ElementsPageTest - Is 'Text Box' option visible: true
+2025-06-18 11:15:12 [main] INFO  Base - Launching browser: edge
+2025-06-18 11:15:17 [main] INFO  Base - Navigated to: https://demoqa.com/books
+2025-06-18 11:15:17 [main] INFO  HomePageTest - Starting test for visibility and clickability of 'Elements' card.
+2025-06-18 11:15:17 [main] INFO  HomePage - HomePage initialized with PageFactory
+2025-06-18 11:15:17 [main] INFO  HomePage - Checking card visibility: elements
+2025-06-18 11:15:17 [main] INFO  HomePageTest - 'Elements' card is visible.
+2025-06-18 11:15:17 [main] INFO  HomePage - Clicking card: elements
+2025-06-18 11:15:17 [main] INFO  HomePageTest - Clicked on 'Elements' card.
+2025-06-18 11:15:22 [main] INFO  Base - Launching browser: edge
+2025-06-18 11:15:26 [main] INFO  Base - Navigated to: https://demoqa.com/books
+2025-06-18 11:15:26 [main] INFO  HomePageTest - Starting Home Page load verification test.
+2025-06-18 11:15:26 [main] INFO  HomePage - HomePage initialized with PageFactory
+2025-06-18 11:15:26 [main] INFO  HomePage - Logo visible: true
+2025-06-18 11:15:26 [main] INFO  HomePage - Footer visible: true
+2025-06-18 11:15:26 [main] INFO  HomePage - Home page loaded status: true
+2025-06-18 11:15:26 [main] INFO  HomePageTest - Home page loaded successfully.

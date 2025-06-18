@@ -1,8 +1,10 @@
 package Selenium.demoqa.pages;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -21,29 +23,21 @@ public class HomePage {
     }
 
     // Locators using @FindBy
-    @FindBy(css = "img[alt='ToolsQA']")
-    private WebElement logo;
+    @FindBy(xpath = "//*[@id=\"app\"]/header/a/img") private WebElement logo; 
 
-    @FindBy(css = ".footer-text")
-    private WebElement footer;
+    @FindBy(xpath = "//*[@id=\"fixedban\"]/div/div[1]") private WebElement footer; 
 
-    @FindBy(xpath = "//h5[text()='Elements']")
-    private WebElement elementsCard;
+    @FindBy (xpath = "//*[@id=\"app\"]/div/div/div/div[1]/div/div/div[1]/span/div") private WebElement elementsCard;
 
-    @FindBy(xpath = "//h5[text()='Forms']")
-    private WebElement formsCard;
+    @FindBy(xpath = "//*[@id=\"app\"]/div/div/div/div[1]/div/div/div[2]/span/div") private WebElement formsCard;
 
-    @FindBy(xpath = "//h5[text()='Alerts, Frame & Windows']")
-    private WebElement alertsCard;
+    @FindBy(xpath = "//*[@id=\"app\"]/div/div/div/div[1]/div/div/div[3]/span/div") private WebElement alertsCard;
 
-    @FindBy(xpath = "//h5[text()='Widgets']")
-    private WebElement widgetsCard;
+    @FindBy(xpath = "//*[@id=\"app\"]/div/div/div/div[1]/div/div/div[4]/span/div") private WebElement widgetsCard;
 
-    @FindBy(xpath = "//h5[text()='Interactions']")
-    private WebElement interactionsCard;
+    @FindBy(xpath = "//*[@id=\"app\"]/div/div/div/div[1]/div/div/div[5]/span/div") private WebElement interactionsCard;
 
-    @FindBy(xpath = "//h5[text()='Book Store Application']")
-    private WebElement bookStoreCard;
+    @FindBy(xpath = "//*[@id=\"app\"]/div/div/div/div[1]/div/div/div[6]/span/div") private WebElement bookStoreCard;
 
     // Page Actions
 
